@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search booking list</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+    <div class="container">
+        <h1 class="text-center mt-4" >JUST WITH YOU 💜</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <input type="tel" id="search-input" name="search-phone" class="form-control" placeholder="Enter Your Phone..." required>
+                    <div class="input-group-append">
+                        <button id="search-button" class="btn btn-primary" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Images Section -->
+    <div class="container mt-4">
+        <h2 class="text-center">ROOM's DESCRIPTION 😘</h2>
+        <div class="card-grid">
+            <!-- Images will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Results Dialog Box -->
+    <div class="modal fade" id="results-dialog" tabindex="-1" role="dialog" aria-labelledby="results-dialog-title" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="results-dialog-title">Search Results</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="results-container">
+                    <!-- Results will be displayed here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>

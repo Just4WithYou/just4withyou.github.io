@@ -1,0 +1,84 @@
+/* Custom styles can be added here */
+body {
+    background-color: #ade2f0;
+    padding: 20px;
+}
+
+h1 {
+    font-family: serif;
+}
+
+#search-input {
+    border-radius: 2;
+}
+
+#search-button {
+    border-radius: 2;
+}
+
+/* Center the dialog vertically */
+.modal {
+    /* display: flex; */
+    align-items: center;
+}
+
+/* Center the dialog horizontally */
+.modal-dialog {
+    margin: 0 auto;
+}
+
+/* Card Grid Styles */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    text-align: left!important;
+    display: block;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
